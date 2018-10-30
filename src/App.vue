@@ -1,22 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="assets/logo.png">
-  </div>
+    <div id="app">
+        <RenmaiEntra></RenmaiEntra>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import HelloWorld from './components/HelloWorld.vue'
+    import RenmaiEntra from './components/RenmaiEntra'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'app',
+        components: {
+            HelloWorld,
+            RenmaiEntra
+        }
+    }
 </script>
 
 <style lang="less">
-#app {
-  margin: 0;
-}
+    @import "~element-ui/lib/theme-chalk/index.css";
 </style>

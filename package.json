@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node server/bin/www",
+    "www": "node server/bin/www",
     "dev": "./node_modules/.bin/nodemon server/bin/www",
     "prd": "pm2 start server/bin/www",
     "serve": "vue-cli-service serve",
@@ -40,6 +40,16 @@
     "@vue/cli-plugin-eslint": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
     "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
   },
   "postcss": {
     "plugins": {

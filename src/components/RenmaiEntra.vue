@@ -231,6 +231,8 @@
 </template>
 
 <script>
+    import axios from 'axios';
+    import echarts from 'echarts';
     export default {
         el: '#app',
         data() {
